@@ -9,7 +9,7 @@ The scripts in this directory retrieve the labels (positive and dispensable gene
 - gnomAD     
 (Karczewski KJ et al. Genome Aggregation Database Consortium; Neale BM, Daly MJ, MacArthur DG. The mutational constraint spectrum quantified from variation in 141,456 humans. Nature (2020). doi: 10.1038/s41586-020-2308-7), Supplementary Dataset 7  
 - OMIM (https://www.omim.org/)   
-- kidney-genetics (https://github.com/halbritter-lab/kidney-genetics/)
+- kidney-genetics (https://github.com/kidney-genetics-org/kidney-genetics-v1/)
 
 #### Description
 This scripts determines dispensable genes - genes with homozygous loss of function variants that are not associated with any disease. It first downloads a list of homozygous knockout genes from the gnomAD publication (s. above). Additionally, it downloads the genemap2.txt file from OMIM - a tab-delimited file containing OMIM's Synopsis of the Human Gene Map including additional information such as genomic coordinates and inheritance. From the list of homozygous ko genes, it removes those which have a 'Phenotype' entry in OMIM or an entry in 'kidney-genetics'. 'Kidney-genetics' is a reproducible and curated database of kidney disease related genes. 
@@ -27,7 +27,7 @@ Downloading the genemap2.txt file from OMIM requires registration at the OMIM we
 
 ### positive_genes.R
 #### Datasources: 
-- kidney-genetics (https://github.com/halbritter-lab/kidney-genetics/)
+- kidney-genetics (https://github.com/kidney-genetics-org/kidney-genetics-v1/)
 
 #### Description
 This scripts sources genes from the github repository 'kidney-genetics'. 'Kidney-genetics' is a reproducible and curated database of kidney disease related genes. 
